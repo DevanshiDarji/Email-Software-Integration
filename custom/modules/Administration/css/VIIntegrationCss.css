@@ -1,0 +1,444 @@
+/*********************************************************************************
+ * This file is part of package Email Software Integration.
+ * 
+ * Author : Variance InfoTech PVT LTD (http://www.varianceinfotech.com)
+ * All rights (c) 2022 by Variance InfoTech PVT LTD
+ *
+ * This Version of Email Software Integration is licensed software and may only be used in 
+ * alignment with the License Agreement received with this Software.
+ * This Software is copyrighted and may not be further distributed without
+ * written consent of Variance InfoTech PVT LTD
+ * 
+ * You can contact via email at info@varianceinfotech.com
+ * 
+ ********************************************************************************/
+#templateManager {
+  background: #eee;
+}
+
+.panel {
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 0;
+  display: flex;
+  margin-bottom: 10px;
+  background: #fff;
+}
+
+.panel-toolbar {
+  border-top: 1px solid rgb(211, 211, 211);
+  border-left: 1px solid rgb(211, 211, 211);
+  border-right: 1px solid rgb(211, 211, 211);
+  border-radius: 0;
+  display: flex;
+  background: #fff;
+}
+
+.template-panel {
+  margin-top: 8px;
+  border: 1px solid rgb(211, 211, 211);
+  padding: 5px;
+  background: #eee;
+}
+
+#wizform > table > tbody > tr > td  {
+  background: #fff;
+}
+
+.template-container {
+  width: 50%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding: 10px;
+}
+
+div:nth-of-type(odd).template-container {
+  border-right: 1px solid rgb(211, 211, 211);
+}
+
+.template-container-full {
+  width: 100%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding: 10px;
+}
+
+.template-container-attachment {
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.template-panel-container, .template-panel-container:after{clear:both}
+.template-panel-container {
+  background: #fff;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.form-group {
+  box-sizing: border-box;
+  border-collapse: collapse;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.button-group, .group {
+  display: inline-block;
+}
+
+.button-group-seperator {
+  padding-top: 4px;
+  margin-left: 4px;
+  margin-right: 6px;
+  border-right: 1px solid rgb(211, 211, 211);
+  display: inline;
+  content: '&nbsp;'
+}
+
+.clear-block {
+  display: block;
+}
+
+.progression-container {
+  margin: 0 0 8px 0;
+  padding:0;
+}
+
+ul.progression {
+  margin: 0;
+  padding:0;
+}
+
+.progression li {
+  background-color: #f08377;
+  border-radius: 0px;
+  display: inline-block;
+  padding: 5px 20px 5px 20px;
+  margin-right: 16px;
+  width: auto;
+  margin-top: 4px;
+}
+
+.progression li:nth-child(1)::before {
+  border: none transparent;
+}
+
+.progression li::before, .progression li::after {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-color: transparent;
+  border-left-color: #fff;
+  border-radius: 0px;
+}
+
+.progression li::before {
+  border-width: 16px;
+  margin-top: -7px;
+  margin-left: -20px;
+}
+
+.progression li::after {
+  border-left-color: #f08377;
+  border-width: 15px;
+  margin-top: -5px;
+  margin-left: 20px;
+}
+
+.progression li.selected {
+  background-color: #808f9c;
+  color: #fff;
+}
+
+.progression li.selected::after {
+  border-left-color: #808f9c;
+}
+
+.progression li:hover {
+  background-color: #f08377;
+  color: #fff;
+  cursor: pointer;
+}
+
+.progression li:hover::after, .progression li.selected:hover::after {
+  border-left-color: #808f9c;
+  color: #fff;
+}
+
+.progression li:last-child::after {
+  border-left-color: transparent;
+}
+
+.progression li div, .progression li div *{
+  color: white;
+  text-decoration: none;
+  padding-left: 8px;
+  display: inline;
+}
+
+.wizard-summary-right .test, .wizard-summary-right .schedule {
+  background-position: center center;
+  text-align: center;
+  vertical-align: bottom;
+  padding: 8px;
+}
+
+.wizard-step-info {
+  margin-bottom: 12px;
+}
+
+.setvisibilityclass{
+  display : block;
+  margin-bottom : 10px;
+}
+
+#step2 table tr td {
+  width: 0px !important;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #808f9c;
+  -webkit-transition: .4s;
+  transition: .4s;
+  height: 25px;
+  width: 50px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #f08377;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+#vtigerSummary, #qboSummary {
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  border-left: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+}
+
+.syncBtn {
+  margin-top: 25px;
+}
+
+#cond_td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#cond_th {
+  text-align: left !important;
+}
+
+/*preview images*/
+#btn_preview {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#btn_preview:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+#myModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 15%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+#img01 {
+  margin: auto;
+  display: block;
+  width: 20%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+  margin-left: 35%;
+}
+
+/* Add Animation */
+#img01, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 130px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+#tr_header > th > b, #tr_header_save_continiue > th > b {
+  display: inherit;
+}
+
+.conditionBlockBorder{
+  border: 2px solid #b5adad;
+}
+
+#conditionBorder{
+  border: 1px solid #dddddd;
+  margin: 7px;
+}
+
+span.conditionMessage{
+  margin-left: 8px;
+  display: inline-table
+}
+
+#aowAllConditionLines > thead td, #aowAnyConditionLines > thead td {
+  background-color: #bfcad3;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 4px;
+  padding-right: 7px;
+  color: #534d64;
+  font-weight: bold;
+  font-size: 13px;
+  border-bottom: 5px #fff solid;
+}
+
+#aowAllConditionLines > tbody > tr, #aowAnyConditionLines > tbody > tr {
+  display: table-row;
+  background-color: #f5f5f5;
+  border-bottom: 5px #fff solid;
+}
+
+.allConditionButtonDiv, .anyConditionButtonDiv {
+  padding-top: 10px;
+  padding-bottom:10px;
+  margin-left: 8px;
+}
+
+.selectedModuleName {
+  font-weight: bold;
+}
+
+.button .suitepicon {
+  line-height: inherit;
+}
+
+.button, input[type='button'] {
+  cursor: pointer;
+  background-color: #f08377;
+  text-transform: uppercase;
+  padding: 0.3em 1em;
+  font-weight: 400;
+  line-height: 1.6em;
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  background-color : #808f9c;
+}
