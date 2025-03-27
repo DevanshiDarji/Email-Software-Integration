@@ -17,7 +17,8 @@ Features:
 https://prnt.sc/wXNLJMmv3DNm
 1) SendGrid:
 https://prnt.sc/nIqadbuV7uTA
-2) Constant Contact:
+https://www.youtube.com/watch?v=Dk4gMmxKiW4
+3) Constant Contact:
 https://prnt.sc/gv3p5NY-O1xT
 https://www.youtube.com/watch?v=aaaAWpuBprc
 4) SendInBlue:
