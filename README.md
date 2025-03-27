@@ -19,9 +19,13 @@ https://prnt.sc/wXNLJMmv3DNm
 https://prnt.sc/nIqadbuV7uTA
 2) Constant Contact:
 https://prnt.sc/gv3p5NY-O1xT
-3) SendInBlue:
+https://www.youtube.com/watch?v=aaaAWpuBprc
+4) SendInBlue:
 https://prnt.sc/90nss41dzNct
-4) Active Campaign:
+https://www.youtube.com/watch?v=UB_wleu5wlg
+6) Active Campaign:
 https://prnt.sc/YIRVxvafA2aR
-5) Mautic:
+https://www.youtube.com/watch?v=fZpeUqSQd5s
+7) Mautic:
 https://prnt.sc/ZV9fTT-8Knue
+https://www.youtube.com/watch?v=nk_zWrcNGAM
